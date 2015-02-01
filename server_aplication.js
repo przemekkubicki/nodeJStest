@@ -60,5 +60,7 @@ function __loadImage(sx, sy, ex, ey, cb) {
 				}
                 cb(new Buffer(original_data, 'binary').toString('base64'));
             });
-        });
+        }).catch(function(err) {
+			return cb.err;
+		});
 };
