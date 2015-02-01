@@ -55,6 +55,9 @@ function __loadImage(sx, sy, ex, ey, cb) {
             x:_x, y:_y
         }).then(function(){
             fs.readFile(out_image, function(err, original_data){
+				if (err) {
+					return cb(err);
+				}
                 cb(new Buffer(original_data, 'binary').toString('base64'));
             });
         });
