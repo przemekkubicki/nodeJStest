@@ -24,7 +24,7 @@ fs.readFile(image, function(err, original_data){
  * @constructor
  */
 function Service(){};
-Service.customCb = function(d) {};
+Service.prototype.customCb = function(d) {};
 Service.prototype.getmapfragment = function(sx, sy, ex, ey){
     var that = this;
     if (sx == 0 && sy == 0 && ex == 0 && ey == 0)
