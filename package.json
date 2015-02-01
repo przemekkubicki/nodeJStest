@@ -1,0 +1,17 @@
+{
+  "name": "NodeJSServer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server_aplication.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server_aplication.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "easyimage": "^1.1.1",
+    "gm": "^1.17.0",
+    "soap-server": "^0.1.0"
+  }
+}
