@@ -34,7 +34,7 @@ Service.prototype.getmapfragment = function(sx, sy, ex, ey){
 };
 
 soapService = serverInstance.addService('getmapfragment', new Service());
-serverInstance.listen(777, '127.0.0.1');
+serverInstance.listen(process.env.PORT||777, '0.0.0.0');
 
 
 /**
